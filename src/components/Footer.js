@@ -35,14 +35,7 @@ const Footer = () => {
                   Changelog
                 </a>
               </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
-                  href="#"
-                >
-                  Docs
-                </a>
-              </p>
+              
             </div>
           </div>
 
@@ -118,7 +111,7 @@ const Footer = () => {
 
         <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
           <div className="flex justify-between items-center">
-            <p className="text-sm text-gray-400">© 2024 Preline Labs.</p>
+            <p className="text-sm text-gray-400">© 2024 Little Lemon Restaurant.</p>
           </div>
 
           <div>
