@@ -1,6 +1,9 @@
 
 import { Link } from "react-router-dom";
 import DishCard from "./DishCard";
+import image6 from "../../static/images/image6.jpg"
+import image7 from "../../static/images/image7.jpg"
+import image9 from "../../static/images/image9.jpg"
 
 const SpecialsSection = () => {
   return (
@@ -16,9 +19,17 @@ const SpecialsSection = () => {
       </div>
 
       <div className="wrapper grid gap-5 lg:gap-16 grid-cols-1 md:grid-cols-3">
-        <DishCard dishName="Greek Salad" price="$12.89"></DishCard>
-        <DishCard dishName="Brushetta" price="$5.99"></DishCard>
-        <DishCard dishName="Lemon Dessert" price="$10.19"></DishCard>
+        <DishCard
+          dishName="Greek Fish"
+          price="$12.89"
+          image={image6}
+        ></DishCard>
+        <DishCard dishName="Garlic Bread" price="$5.99" image={image7}></DishCard>
+        <DishCard
+          dishName="Lemon Pasta"
+          price="$10.19"
+          image={image9}
+        ></DishCard>
       </div>
     </section>
   );

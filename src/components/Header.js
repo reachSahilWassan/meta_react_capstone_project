@@ -3,13 +3,13 @@ import HeaderLink from "./HeaderLink";
 import { useState, useRef } from "react";
 import hamburgerMenu from "../assets/hambugerMenu.svg"
 import closeMenu from "../assets/closeMenu.svg"
+import { Link } from "react-router-dom";
 
 const Header = () =>{
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const toggleMenu = (e) => {
     e.preventDefault()
-    console.log("here")
     setMenuOpen(!menuOpen);
   }
 
@@ -17,13 +17,13 @@ const Header = () =>{
     <header className="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200">
       <nav className="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center gap-x-1">
-          <a
+          <Link
             className="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80"
-            href="#"
+            to="/"
             aria-label="Brand"
           >
             <img src={logo} alt="Little Lemon Logo" />
-          </a>
+          </Link>
 
           <button onClick={toggleMenu}>
             <img src={menuOpen ? closeMenu : hamburgerMenu} alt="" />
@@ -47,7 +47,7 @@ const Header = () =>{
                   <HeaderLink link="">Home</HeaderLink>
                   <HeaderLink link="">About</HeaderLink>
                   <HeaderLink link="">Menu</HeaderLink>
-                  <HeaderLink link="">Reservations</HeaderLink>
+                  <HeaderLink link="/reserve-a-table">Reservations</HeaderLink>
                   <HeaderLink link="">Order Online</HeaderLink>
                 </div>
               </div>

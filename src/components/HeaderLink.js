@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HeaderLink = (props)=>{
     return (
       <Link
-        className="p-2 flex items-center text-sm text-gray-800 hover:bg-[#495E57] hover:text-white rounded-lg focus:outline-none focus:bg-gray-100"
+        className="p-2 flex items-center text-sm text-gray-800 hover:bg-[#495E57] hover:text-white rounded-lg"
         to={props.link}
         aria-current="page"
       >

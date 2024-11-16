@@ -1,4 +1,3 @@
-import image3 from "../../static/images/image3.jpg"
 import deliveryLogo from "../../static/images/delivery.svg"
 
 const DishCard = (props)=>{
@@ -6,9 +5,9 @@ const DishCard = (props)=>{
       <div className="card shadow-sm h-full border rounded-lg grid gap-3 mx-auto max-w-sm md:max-w-lg">
         <figure className="w-full">
           <img
-            src={image3}
+            src={props.image}
             alt=""
-            className="object-cover h-56 rounded-t-lg rounded-r-lg w-full"
+            className="object-cover h-56 rounded-ss-lg rounded-se-lg w-full"
           />
         </figure>
 
@@ -24,7 +23,7 @@ const DishCard = (props)=>{
             ducimus?
           </div>
 
-          <button className="mx-auto mb-4 p-2 flex items-center text-sm bg-[#495E57] hover:bg-black text-white rounded-lg focus:outline-none focus:bg-gray-100">
+          <button className="mx-auto mb-4 p-2 flex items-center text-sm bg-[#495E57] hover:bg-black text-white rounded-lg">
             <span>Order a Delivery</span>{" "}
             <img src={deliveryLogo} alt="" className="h-6" />
           </button>

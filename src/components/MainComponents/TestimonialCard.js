@@ -1,10 +1,10 @@
-const TestimonialCard = ()=>{
+const TestimonialCard = (props)=>{
     return (
         <div className="flex h-auto shadow-sm border rounded-lg">
         <div className="flex flex-col bg-white rounded-xl">
           <div className="flex-auto p-4 md:p-6">
             <p className="text-base italic md:text-lg text-gray-800">
-              " With Preline, we're able to easily track our performance in full detail. It's become an essential tool for us to grow and engage with our audience. "
+              {props.testimonial}
             </p>
           </div>
 
@@ -19,7 +19,7 @@ const TestimonialCard = ()=>{
                   Josh Tyson
                 </p>
                 <p className="text-xs text-gray-500">
-                  Product Manager | Capsule
+                  Customer
                 </p>
               </div>
             </div>
