@@ -18,7 +18,11 @@ const HeroSection = () => {
             itaque? Officia fuga eaque labore dolore excepturi.
           </p>
 
-          <Link to="/reserve-a-table" className="bg-[#495E57] hover:bg-gray-950 text-white px-8 py-4 rounded-lg mt-4 inline-block">
+          <Link
+            to="/reserve-a-table"
+            aria-label="On Click"
+            className="bg-[#495E57] hover:bg-gray-950 text-white px-8 py-4 rounded-lg mt-4 inline-block"
+          >
             Reserve a Table
           </Link>
         </div>

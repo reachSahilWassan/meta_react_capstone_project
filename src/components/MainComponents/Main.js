@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import ReserveTable from "../ReserveTableComponents/ReserveTable";
 import HomePage from "./HomePage";
 import ConfirmedBooking from "../ConfirmedBooking";
-import { useEffect, useReducer } from "react";
+import { useReducer } from "react";
 import { fetchAPI } from "../../Helper";
 
 export const initializeTimes = () => {
